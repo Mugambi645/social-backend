@@ -10,10 +10,10 @@ from .models import MyUser
 class UserAdmin(BaseUserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
-    list_display = ('name', 'email', 'is_admin',)
-    list_filter = ('is_admin', )
+    list_display = ('name', 'email',)
+    list_filter = ('email', )
     fieldsets = (
-        (None, {'fields': ('email', 'password')}),
+        (None, {'fields': ('name', 'password')}),
         ('Email', {'fields': ('email',)}),
         ('staff status', {'fields': ('is_admin',)}),
         
