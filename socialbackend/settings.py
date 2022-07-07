@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'rest_framework',
     'knox',
+    "chat",
   
 ]
 
