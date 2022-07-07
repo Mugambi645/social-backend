@@ -4,5 +4,5 @@ app_name = "posts"
 
 urlpatterns = [
     path('', views.getRoutes, name='routes'),
-    path('/posts', views.getPosts, name='posts')
+    path('posts/', views.getPosts, name='posts')
 ]
