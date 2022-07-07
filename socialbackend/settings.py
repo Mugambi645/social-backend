@@ -51,10 +51,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    
+    'posts',
     'django_rest_passwordreset',
     'rest_framework',
     'knox',
+    "chat",
   
 ]
 
