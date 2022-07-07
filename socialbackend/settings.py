@@ -68,8 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.common.CommonMiddleware",
+    "corsheaders.middleware.CorsMiddleware",    
 ]
 
 ROOT_URLCONF = 'socialbackend.urls'
@@ -158,3 +157,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+CORS_ALLOW_ALL_ORIGINS = True
