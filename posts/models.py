@@ -5,7 +5,7 @@ class Post(models.Model):
     """
     Model for storing post data
     """
-    user = models.OneToOneField(User,on_delete=models.CASCADE)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
     title = models.CharField(max_length=255, blank=True)
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
@@ -14,7 +14,7 @@ class Post(models.Model):
     dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
     #return a string of the class object
     def __str__(self):
-        return self.user + " " + self.title
+        return self.title
 
 class Comment(models.Model):
     """comment model
